@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+<script>
+    function toggleAnswer(index) {
+        var faqItem = document.getElementsByClassName("faq-item")[index];
+        faqItem.classList.toggle("active");
+    }
+</script>
+</head>
+<body>
+    <nav>
+       <div class="nav-items">
+            <h1>STAR</h1>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="booknow.php">Booking</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a title="link" href="admin.php">Admin</li>
+                <li><a title="link" href="faq.php">FAQ</li>
+            </ul>
+       </div>
+    </nav>
+    <br><br><br>
+    <h1>Hotel FAQs</h1>
+    <div class="faq-list">
+        <div class="faq-item">
+            <h3>What are the check-in and check-out times?</h3>
+            <p class="answer">The standard check-in time is 3:00 PM and check-out time is 12:00 PM. Early check-in or late check-out may be available upon request, subject to availability.</p>
+            <p class="expand" onclick="toggleAnswer(0)">Show Answer</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you provide airport transportation?</h3>
+            <p class="answer">Yes, we offer airport transportation services for our guests. Please contact our front desk for more information and to make arrangements.</p>
+            <p class="expand" onclick="toggleAnswer(1)">Show Answer</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is breakfast included in the room rate?</h3>
+            <p class="answer">Yes, breakfast is included in the room rate. We provide a complimentary breakfast buffet with a variety of options to choose from.</p>
+            <p class="expand" onclick="toggleAnswer(2)">Show Answer</p>
+        </div>
+    </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+    <div>
+        <p id="a">Copyright &copy; <a href="https://github.com/cute-poison">cute-poison</a>. All Rights Reserved.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Designed by <a href="https://github.com/cute-poison">cute-poison</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
