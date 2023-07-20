@@ -1,0 +1,120 @@
+<?php
+    include_once 'admin/include/class.user.php'; 
+    $user=new User(); 
+
+    if(isset($_REQUEST[ 'submit'])) 
+    { 
+        extract($_REQUEST); 
+        $result=$user->booknow($checkin, $checkout, $name, $phone,$roomname);
+        if($result)
+        {
+            echo "<script type='text/javascript'>
+                  alert('".$result."');
+             </script>";
+        }
+
+
+        
+    }
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+     <!-- external css links -->
+ <link rel="stylesheet" href="css files/style.css">
+ <link rel="stylesheet" href="css files/bootstrap.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+ <title>Hotel Booking</title>
+ <!-- <link rel="icon" type="image/x-mark" href="../asset/images/favicon.png"> -->
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin/css/reg.css" type="text/css">
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( ".datepicker" ).datepicker({
+            dateFormat : 'yy-mm-dd'
+        });
+  } );
+  </script>
+
+    
+</head>
+<body>
+
+    <div class="container">
+      
+        <img class="img-responsive" src="" style="width:100%; height:180px;">      
+    
+        <form class="well">
+
+            <div class="form-group">
+                <label for="checkin">Check In :</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" class="datepicker form-control" name="checkin">
+            </div>
+               
+            <div class="form-group">
+                <label for="checkout">Check Out:</label>&nbsp;
+                <input type="text" class="datepicker form-control" name="checkout">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Enter Your Full Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="Jhon Wicky" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Enter Your Phone Number:</label>
+                <input type="text" class="form-control" name="phone" placeholder="018XXXXXXX" required>
+            </div>
+                
+            <button type="submit" class="btn btn-lg btn-primary button" name="submit">Book Now</button>
+
+            <br>
+            <div id="click_here">
+                <a href="index.php">Back to Home</a>
+            </div>
+
+        </form>
+    </div>
+        
+
+    <footer class="footer">
+        <div>
+            <p id="a">Copyright &copy; <a href="https://github.com/cute-poison">cute-poison</a>. All Rights Reserved.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Designed by <a href="https://github.com/cute-poison">cute-poison</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+</body>
+</html>

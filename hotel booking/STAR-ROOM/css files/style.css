@@ -152,7 +152,6 @@ nav a{
     color: #000;
 }
 
-
 /* =====================DROPDOWN NAV.===================== */
 .dropdown_menu{
     display: none;
@@ -172,11 +171,11 @@ nav a{
 .dropdown_menu li{
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     gap:1rem;
     padding: 0.7rem;
 }
-
 
 .dropdown_menu a:hover{
     color: rgb(255, 247, 0);
@@ -187,9 +186,12 @@ nav a{
 .dropdown_menu li:hover{
     background-color: rgb(65, 65, 140);
     transition: all 100ms ease;
-    scale: 0.9;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
 }
-
 
 .dropdown_menu a{
     color: white;
@@ -203,7 +205,10 @@ nav a{
 }
 
 .registration:hover{
-    scale: 1.2;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* =====================RESPONSIVE============================= */
@@ -251,4 +256,53 @@ nav a{
     .hero-container a{
         padding: 10px;
     }
+}
+
+/* ====================booking=============================== */
+
+body {
+    background-image: url('../../images/home_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+    color: #ffbb2b;
+}
+
+#click_here {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+/*
+.well {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+   
+}
+*/
+
+.container
+{
+    width: 60%;
+    margin-top: 10px;
+}
+
+label
+{
+    color:#ffbb2b;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.button
+{
+    
+    width: 100px;
+    float: right;
+    font-size: 13px;
+    
 }
