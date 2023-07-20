@@ -127,6 +127,7 @@ nav a{
 
 .hero-container p{
     font-size: 1.5rem;
+    font-weight: 700;
 }
 .hero-container h1{
     font-size: 4rem;
@@ -143,6 +144,7 @@ nav a{
     margin-top: 6px;
     border-radius: 18px;
     border: none;
+    width: 150px;
 }
 
 .hero-container a:hover{
@@ -198,6 +200,10 @@ nav a{
     width: 110px;
     text-align: center;
     border-radius: 10px;
+}
+
+.registration:hover{
+    scale: 1.2;
 }
 
 /* =====================RESPONSIVE============================= */
