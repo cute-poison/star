@@ -32,13 +32,19 @@
     --bs-dark: #212529;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 ._header{
-    height: 100dvh;
     background-image: url('../../images/home_bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     place-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -54,16 +60,18 @@ h2 {
 
 .well {
     background: var(--bs-white);
-    border: none;
+
+    /* border: none; */
     /* box-shadow: 0px 1rem 2rem rgba(0,0,0,.1); */
    
 }
 
-.container
-{
-    width: 60%;
-    margin-top: 10px;
-    box-shadow: 0px 1rem 2rem rgba(0,0,0,1);
+.book-log{
+    position: relative;
+    padding-top: 2rem;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -79,7 +87,13 @@ label
 
 input{
     background-color: var(--bs-gray-200);
+
 }
+
+.con-tim img{
+    height: 200px;
+}
+
 
 .button
 {
@@ -93,4 +107,11 @@ input{
     padding-right: 4rem;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:400px){
+    .foot{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
