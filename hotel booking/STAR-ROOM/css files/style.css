@@ -211,6 +211,33 @@ nav a{
     transform: scale(1.1);
 }
 
+.booking{
+    height: 100%;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.booking_holder{
+    place-content: center;
+    align-items: center;
+}
+
+.booking button{
+    background-color: var(--bs-gray-100);
+    padding: 8px;
+    color: #000;
+    margin-top: 6px;
+    border-radius: 18px;
+    border: none;
+    width: 100px;
+}
+
+.booking button:hover{
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    
+}
+
 /* =====================RESPONSIVE============================= */
 @media (max-width:769px)  {
     .nav--container .nav-link{
