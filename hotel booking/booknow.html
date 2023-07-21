@@ -32,10 +32,10 @@
     <title>Hotel Booking</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="admin/css/reg.css" type="text/css">
   
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -52,48 +52,45 @@
 
 <body>
     <section class="_header">
-        <div class="container">
+       <div class="container">
+        <div class="row ">
       
-            <img class="img-responsive" src="img/house.jpg" alt="">      
-             
-            <div class="well">           
-                 <form>
-                    <div class="form-group">
-                         <label for="checkin">Check In :</label>&nbsp;&nbsp;&nbsp;
-                         <input type="text" class="datepicker" name="checkin">
-     
-                     </div>
-                    
-                    <div class="form-group">
-                         <label for="checkout">Check Out:</label>&nbsp;
-                         <input type="text" class="datepicker" name="checkout">
-                     </div>
-                     <div class="form-group">
-                         <label for="name">Enter Your Full Name:</label>
-                         <input type="text" class="form-control" name="name" placeholder="Jhon Wicky" required>
-                     </div>
-                     <div class="form-group">
-                         <label for="phone">Enter Your Phone Number:</label>
-                         <input type="text" class="form-control" name="phone" placeholder="018XXXXXXX" required>
-                     </div>
-                      
-                    
-                     <button type="submit" class="btn btn-lg btn-primary button" name="submit">Book Now</button>
-     
-                    <br>
-                     <div id="click_here">
-                         <a href="index.php">Back to Home</a>
-                     </div>
-     
-     
-                 </form>
+            <div class="col-lg-6">
+                 <img class="img-responsive" src="img/house.jpg"  alt=""> 
+            </div>     
+              
+                <div class="well col-lg-6">           
+                    <form>
+                        <div class="form-group">
+                            <label for="checkin">Check In :</label>&nbsp;&nbsp;&nbsp;
+                            <input type="text" class="datepicker" id="checkin" name="checkin">
+        
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkout">Check Out:</label>&nbsp;
+                            <input type="text" id="checkout" class="datepicker" name="checkout">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Enter Your Full Name:</label>
+                            <input type="text" class="form-control" name="name" placeholder="Jhon Wicky" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Enter Your Phone Number:</label>
+                            <input type="text" class="form-control" name="phone" placeholder="018XXXXXXX" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-lg btn-primary button" name="submit">Book Now</button>
+        
+                        <br>
+                        <div id="click_here">
+                            <a href="index.php">Back to Home</a>
+                        </div>
+                    </form>
+                </div>
+              
             </div>
-             
         </div>
-         
-         
-         
-         
          
         <footer class="">
             <div class="foot">
