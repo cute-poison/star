@@ -71,6 +71,8 @@ img{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url(../img/house.jpg);
+    background-color: rgba(0, 6, 6, .5);
+    background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     position: center;
@@ -116,7 +118,7 @@ nav a{
 /* ============================= */
 
 .hero-container{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 1px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,6 +240,10 @@ nav a{
     
 }
 
+.carousel img{
+    height: 400px;
+}
+
 /* =====================RESPONSIVE============================= */
 @media (max-width:769px)  {
     .nav--container .nav-link{
@@ -265,6 +271,43 @@ nav a{
     }
 }
 
+@media (max-width:560px){
+    
+    .hero-container p{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .hero-container h1{
+        font-size: 2rem;
+        color: var(--bs-warning);
+    }
+
+    .hero-container h1{
+        margin: 1rem;
+    }
+
+    .booking button{
+        padding: 5px;
+        /* width: 10px; */
+        font-size: small;
+    }
+
+    .container{
+        width:90%;
+    }
+
+    .hero-container a{
+        padding: 5px !important;
+        width: 100px;
+    }
+
+    .carousel img{
+        height: 300px;
+    }
+}
+
+
 @media (max-width:377px){
     .dropdown_menu{
         left: 2rem;
@@ -277,7 +320,7 @@ nav a{
     }
 
     .hero-container p{
-        font-size: medium;
+        font-size:.7;
     }
 
     .hero-container a{
@@ -287,7 +330,7 @@ nav a{
 
 /* ====================booking=============================== */
 
-body {
+/* body {
     background-image: url('../../images/home_bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -302,7 +345,7 @@ h2 {
     margin-top: 10px;
     text-align: center;
     
-}
+} */
 
 /*
 .well {
@@ -312,7 +355,7 @@ h2 {
 }
 */
 
-.container
+/* .container
 {
     width: 60%;
     margin-top: 10px;
@@ -332,4 +375,4 @@ label
     float: right;
     font-size: 13px;
     
-}
+} */
