@@ -67,6 +67,7 @@ h2 {
 }
 
 .book-log{
+    width: 600px;
     position: relative;
     padding-top: 2rem;
     place-content: center;
@@ -109,9 +110,14 @@ input{
     justify-content: space-between;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
     .foot{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .book-log{
+        width:fit-content; 
+        height:fit-content;
     }
 }
