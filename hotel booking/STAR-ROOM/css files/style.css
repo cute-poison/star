@@ -167,10 +167,12 @@ nav a{
     width: 200px;
     border-radius: 10px;
     overflow: hidden;
+    position: fixed;
+    z-index: 11;
 }
 
 .dropdown_menu.open{
-    height: 240px;
+    height: 300px;
 }
 
 .dropdown_menu li{
@@ -215,6 +217,9 @@ nav a{
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+}
+.registration a:hover{
+    color: #000;
 }
 
 .active{
@@ -323,8 +328,10 @@ nav a{
 
 @media (max-width:377px){
     .dropdown_menu{
-        left: 2rem;
+        left: 0;
+        right: 0;
         width: unset;
+        border-radius: none;
     }
 
     .hero-container h1{
@@ -379,7 +386,7 @@ footer{
     padding: 1rem;
     align-items: baseline;
     justify-content: baseline;
-    background-color: var(--bs-gray-600);
+    background-color: var(--bs-dark);
     color: var(--bs-gray-100)
 }
 .foot a{
@@ -548,3 +555,49 @@ h2{
         place-content: center;  
      }
 }
+
+/* ===============Admin page==================== */
+
+.well {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    height: 200px;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.admin_sec{
+    background-image: url(../img/home_bg\ -\ Shortcut.lnk);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: fit-content;
+    /* width: 100%; */
+    
+}
+
+.adds{
+    padding-top: 5rem;
+}
+
+.admin_sec h4{ 
+    color: #ffbb2b;    
+}
+
+.well a{
+    color: var(--bs-gray-100);
+}
+.well a:hover{
+    color: var(--bs-indigo);
+}
+
+/* @media (max-width:450px){
+    .well{
+        width: 350px;
+    }
+
+    .admin_sec{
+        padding: 1rem !important;
+    }
+} */

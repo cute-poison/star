@@ -1,4 +1,4 @@
-<?php session_start();
+<!-- <?php session_start();
 include_once 'admin/include/class.user.php';
 $user=new User();
 $uid=$_SESSION[ 'uid']; 
@@ -11,7 +11,7 @@ if(isset($_GET['q']))
     $user->user_logout();
  header("location:index.php"); 
 } 
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -21,161 +21,132 @@ if(isset($_GET['q']))
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Admin Panel</title>
+    
+        <!-- external css links -->
+        <link rel="stylesheet" href="STAR-ROOM/css files/style.css">
+        <link rel="stylesheet" href="STAR-ROOM/css files/bootstrap.css">
+        <link rel="stylesheet" href="STAR-ROOM/css files/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    
+        <title>Admin</title>
+        <!-- <link rel="icon" type="image/x-mark" href="../asset/images/favicon.png"> -->
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
-    <style>
-        .well {
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            height: 200px;
-        }
-        
-        body {
-            background-image: url('images/home_bg.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        
-        h4 {
-            color: #ffbb2b;
-        }
-        
-        ul {
-            color: white;
-            font-size: 13px;
-        }
- .nav-items{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    align-items: center;
-    padding: 0 10px;
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    top: 0;
-}
-.footer{
-    background-color: white;
-    text-align: center;
-    color: black;}
-
-nav h1{
-    color: white;
-    font-size: 50px;
-}
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-    </style>
-
-
 </head>
 
 <body>
     
-    <nav>
-       <div class="nav-items">
-            <h1>STAR</h1>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="room.php">Explore</a></li>
-                <li><a href="reservation.php">Booking</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                 <li><a href="admin.php">Admin</li>
-                 <li><a href="faq.php">FAQ</li>
-            </ul> 
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="admin.php?q=logout">
-                            <button type="button" class="btn btn-danger">Logout</button>
-                        </a>
-                    </li>
-                </ul>
+    <section class="section">
+        <nav class="nav--container rounded-bottom-5 ">
+            <h2 class="ps-4 "><a href="#"><strong class="text-warning">STAR</strong></a></h2>
+
+            <ul class="nav-link d-flex">
+                <li class="nav-item"><a href="STAR-ROOM/index.html">Home</a></li>
+                <li class="nav-item"><a href="explore.html">Explore</a></li>
+                <li class="nav-item"><a href="booknow.html">Book Now</a></li>
+                <li class="nav-item "><a href="contact.html">Contact</a></li>
+                <li class="nav-item active"><a href="admin.html">Admin</a></li>
+                <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        
+                <div class="registration border border-light">
+                    <li><a href="reservation.php">Book Now</a></li>
+                </div>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="bi-list"></i>
             </div>
         </nav>
-<br><br><br>
-        <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
-                <h4>Room Category</h4>
-                <hr>
-                <ul>
-                    <li><a href="admin/addroom.php">Add Room Category</a></li>
-                    <li><a href="show_room_cat.php">Show All Room Category</a></li>
-                    <li><a href="show_room_cat.php">Edit Room Category</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
 
-        <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
-                <h4>Bookings</h4>
-                <hr>
-                <ul>
-                    <li><a href="room.php">Book Now</a></li>
-                    <li><a href="show_all_room.php">Show All Booked Rooms</a></li>
-                    <li><a href="show_all_room.php">Edit Booked Room</a></li>
-                </ul>
-            </div>
-           <div class="col-md-3"></div>
+        <div class="dropdown_menu">
+            <li class="nav-item"><a href="STAR-ROOM/index.html">Home</a></li>
+            <li class="nav-item"><a href="explore.html">Explore</a></li>
+            <li class="nav-item"><a href="booknow.html">Book Now</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <li class="nav-item"><a href="admin.html">Admin</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
         </div>
-        
-        
-        <div class="row">
-           <div class="col-md-3"></div>
-            <div class="col-md-6 well">
-                <h4>Add Manager</h4>
-                <hr>
-                <ul>
-                    <li><a href="admin/registration.php">Add Manager</a></li>
- 
-                </ul>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+    </section>
 
 
-    </div><br><br><br>
-    <footer class="footer">
-        <div>
-                <p id="a">Copyright &copy; <a href="https://github.com/cute-poison">cute-poison</a>. All Rights Reserved.
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Designed by <a href="https://github.com/cute-poison">cute-poison</a>
-                    </p>
+    <section class="admin_sec ">
+
+        <div class="container adds">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 well">
+                    <h4>Room Category</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="admin/addroom.php">Add Room Category</a></li>
+                        <li><a href="show_room_cat.php">Show All Room Category</a></li>
+                        <li><a href="show_room_cat.php">Edit Room Category</a></li>
+                    </ul>
                 </div>
-               </footer>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 well">
+                    <h4>Bookings</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="room.php">Book Now</a></li>
+                        <li><a href="show_all_room.php">Show All Booked Rooms</a></li>
+                        <li><a href="show_all_room.php">Edit Booked Room</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+            <div class="row mt-2">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 well">
+                    <h4>Add Manager</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="admin/registration.php">Add Manager</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+        </div>
+    </section>
 
 
+    <footer class="bg-dark">
+        <div class="foot d-flex">
+            <h6 id="a"> Copyright &copy; <a href="https://github.com/cute-poison">cute-poison</a> All&nbsp;Rights&nbsp;Reserved.</h6>
+            <h6> Designed by <a href="https://github.com/cute-poison">cute&nbsp;-&nbsp;poison</a></h6>
+        </div>
+    </footer>
 
+    <script src="STAR-ROOM/js/bootstrap.bundle.js"></script>
+    <script src="STAR-ROOM/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
 
-
-
-
-
+            toggleIcon.classList = isOpen
+            ? 'bi bi-x'
+            : 'bi bi-list'
+        }
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
