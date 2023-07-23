@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- external css links -->
+    <link rel="stylesheet" href="STAR-ROOM/css files/style.css">
+    <link rel="stylesheet" href="STAR-ROOM/css files/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+    <title>Contact</title>
+    <!-- <link rel="icon" type="image/x-mark" href="../asset/images/favicon.png"> -->
+
+</head>
+<body>
+    
+    <section class="section">
+        <nav class="nav--container rounded-bottom-5 ">
+            <h2 class="ps-4 "><a href="#"><strong class="text-warning">STAR</strong></a></h2>
+
+            <ul class="nav-link d-flex">
+                <li class="nav-item"><a href="STAR-ROOM/index.html">Home</a></li>
+                <li class="nav-item"><a href="explore.html">Explore</a></li>
+                <li class="nav-item"><a href="booknow.html">Book Now</a></li>
+                <li class="nav-item active"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="admin.html">Admin</a></li>
+                <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        
+                <div class="registration border border-light">
+                    <li><a href="reservation.php">Book Now</a></li>
+                </div>
+            </ul>
+
+            <div class="toggle_btn">
+                <i class="bi-list"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+            <li class="nav-item"><a href="STAR-ROOM/index.html">Home</a></li>
+            <li class="nav-item"><a href="explore.html">Explore</a></li>
+            <li class="nav-item"><a href="booknow.html">Book Now</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <li class="nav-item"><a href="admin.html">Admin</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        </div>
+    </section>    
+
+    <section class="contact_sec ps-3 pe-3">
+        <div class="container">
+            <div class="row border border-2 rounded-3">
+                <div class="col-md-7 col-lg-6 ">
+                    <h1><strong>Contact Us</strong></h1>
+                    <hr>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> 123 Street, City, Country</p>
+                        <p><strong>Telephone:</strong> 123-456-7890</p>
+                        <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+                    </div>
+                    <div class="socials d-flex gap-3">
+                        <h6><a title="facebook" href="#"> <li class="bi bi-facebook"></li></a></h6>
+                        <h6><a title="facebook" href="#"> <li class="bi bi-twitter"></li></a></h6>
+                        <h6><a title="facebook" href="#"> <li class="bi bi-whatsapp"></li></a></h6>
+                    </div>
+                    <br>
+
+                    <h3>Direction</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iusto 
+                        officia mollitia similique facilis illum alias odit quisquam cum adipisci
+                         dolor debitis, deleniti repellat consectetur veniam quis nam suscipit 
+                         perferendis!
+                    </p>
+                </div>
+                <div class="contact_img col-md-4 col-lg-6  ">
+                   
+                </div>
+
+            </div>
+        </div>    
+    </section>
+
+    <footer class="">
+        <div class="foot d-flex">
+            <h6 id="a"> Copyright &copy; <a href="https://github.com/cute-poison">cute-poison</a> All&nbsp;Rights&nbsp;Reserved.</h6>
+            <h6> Designed by <a href="https://github.com/cute-poison">cute&nbsp;-&nbsp;poison</a></h6>
+        </div>
+    </footer>
+
+    <script src="STAR-ROOM/js/bootstrap.bundle.js"></script>
+    <script src="STAR-ROOM/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleIcon.classList = isOpen
+            ? 'bi bi-x'
+            : 'bi bi-list'
+        }
+    </script>
+
+</body>
+</html>
